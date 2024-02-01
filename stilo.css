@@ -1,5 +1,15 @@
-.fijo {
-    margin:  25px;
+.derecha {
+    margin-right: 35px;
     background-color: azure;
     align-content: center;
+    float: right;
+}
+.izquierda {
+    float: left;
+    margin-top: 45px;
+    margin-left: 40px;
+}
+button {
+    padding: 5px;
+    margin: 10px;
 }

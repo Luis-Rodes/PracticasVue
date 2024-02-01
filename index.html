@@ -8,7 +8,7 @@
 </head>
 <body>
     <div id="app">
-    <div class="fijo">
+    <div class="derecha">
         <h2>Datos</h2>
         <div>
           Nombre: {{Nombre}}
@@ -22,10 +22,11 @@
         <div>
           Edad: {{Edad}}
         </div>
+        <button @click.prevent="cerrarVista(`cerrar`, $event)">Cerrar</button>
       </div>
       <div>
-        <h2>Formulario de edición</h2>
-        <form>
+        <form class ="izquierda">
+          <h2>Formulario de edición</h2>
           <div>
             <label for="campoNombre">Nombre</label> <input id="campoNombre" type="text" v-model="Nombre">
           </div>
@@ -39,6 +40,7 @@
           <div>
             <label for="campoEdad">Edad</label> <input id="campoEdad" type="number" v-model="Edad">
           </div>
+          <button class="" @click.prevent="ver(`ver`, $event)">Editar</button>
         </form>
       </div>
     </div>
