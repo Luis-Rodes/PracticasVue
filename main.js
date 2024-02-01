@@ -5,6 +5,7 @@ var app = new Vue({
       Apellidos : 'Rodes Roca',
       foto : 'https://tse3.mm.bing.net/th?id=OIP.LVPLwc2LP3K0LDPLPw7B7gC0C0&pid=Api',
       Edad : 52,
+      vista : false,
     },
     methods : {
       cerrarVista ( mensaje , evento) {

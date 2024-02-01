@@ -8,6 +8,9 @@
 </head>
 <body>
     <div id="app">
+      
+      <div v-if="vista">
+
     <div class="derecha">
         <h2>Datos</h2>
         <div>
@@ -22,7 +25,8 @@
         <div>
           Edad: {{Edad}}
         </div>
-        <button @click.prevent="cerrarVista(`cerrar`, $event)">Cerrar</button>
+        <button @click.prevent="vista = !vista">Cerrar</button>
+      </div>
       </div>
       <div>
         <form class ="izquierda">
@@ -40,7 +44,8 @@
           <div>
             <label for="campoEdad">Edad</label> <input id="campoEdad" type="number" v-model="Edad">
           </div>
-          <button class="" @click.prevent="ver(`ver`, $event)">Editar</button>
+          <button class="" @click.prevent="vista = !vista">Editar</button>
+        
         </form>
       </div>
     </div>
