@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilo.css">
+    <title>Formulario datos</title>
+</head>
+<body>
+    <div id="app">
+    <div class="fijo">
+        <h2>Datos</h2>
+        <div>
+          Nombre: {{Nombre}}
+        </div>
+        <div>
+          Apellidos: {{Apellidos}}
+        </div>
+        <div>
+          Imagen: <img alt="Imagen" :src="foto">
+        </div>
+        <div>
+          Edad: {{Edad}}
+        </div>
+      </div>
+      <div>
+        <h2>Formulario de edición</h2>
+        <form>
+          <div>
+            <label for="campoNombre">Nombre</label> <input id="campoNombre" type="text" v-model="Nombre">
+          </div>
+          <div>
+            <label for="campoApellidos">Apellidos</label> <input id="campoApellidos" type="text"
+              v-model="Apellidos">
+          </div>
+          <div>
+            <label for="campoImagen">Imagen</label> <input id="campoImagen" type="text" v-model="foto">
+          </div>
+          <div>
+            <label for="campoEdad">Edad</label> <input id="campoEdad" type="number" v-model="Edad">
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"> </script>
+</body>
+</html>
